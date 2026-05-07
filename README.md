@@ -75,7 +75,12 @@ proyecto/
 | `arrival_mode` | Modo de llegada | Categórica | walk_in (66%) · wheelchair (17%) · ambulance (17%) |
 
 ---
-```
+
+## Hallazgos del EDA
+- Sin datos faltantes en ninguna variable.
+- Desbalance de clases: nivel 0 representa el 55% — se requerirá `class_weight='balanced'` o SMOTE al modelar.
+- `arrival_mode` requiere encoding antes de entrar al modelo.
+- `pain_level` y `chronic_disease_count` son candidatas a convertirse en variables binarias.
 
 ---
 
